@@ -6,12 +6,12 @@ An angular directive to help you copy text to clipboard. Without Flash or anyoth
 
 #Usage
 Import `ngClipBoard.js`:
-```
+```html
 <srcipt type="text/javascript" src="ngClipBoard.js">
 ```
 
 Inject `clipBoard` to your angular project:
-```
+```js
 var app = angular.module('appName', [
         //...
         'clipBoard'
@@ -27,7 +27,7 @@ Then you can set copying or cutting by adding a `clip-board-target` attribute in
 
 Additionally, you can define a `clip-board-action` attribute to specify if you want to either copy or cut content.
 
-```
+```html
 <!-- Target -->
 <input id="target" value="Text you wanna copy or cut">
 
@@ -40,7 +40,7 @@ Additionally, you can define a `clip-board-action` attribute to specify if you w
 First, add a `clip-board` attribute as an angular directive in your trigger element.
 
 And then just include a `clip-board-text` attribute in your trigger element.
-```
+```html
 <!-- Trigger -->
 <button clip-board clip-board-text="Text you wanna copy">
     Copy to clipboard
